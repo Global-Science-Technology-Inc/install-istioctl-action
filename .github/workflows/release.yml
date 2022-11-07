@@ -17,7 +17,7 @@ jobs:
       with:
         node-version: 16
     - name: Build
-      uses: npm run build
+      run: npm run build
     - name: Test
       run: npm run test
     - name: Setup Istioctl
