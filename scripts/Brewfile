@@ -1,0 +1,8 @@
+brew "adr-tools"
+brew "pre-commit"
+brew "shellcheck"
+brew "mkdocs"
+brew "markdownlint-cli"
+brew "jq"
+brew "talisman"
+brew "direnv"

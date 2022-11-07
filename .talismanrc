@@ -1,0 +1,5 @@
+fileignoreconfig:
+- filename: scripts/Brewfile.lock.json
+  checksum: 178cef48124e4e9ea55925fab3b7bd54df8ac715968221d9b72f341ad91d61b1
+- filename: CONTRIBUTING.md
+  checksum: cf191942d03ef1d565dc017d2065ca3dcb0b390871a3417c30cab13a8790cf60
