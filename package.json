@@ -1,5 +1,5 @@
 {
-  "name": "@gst/install-istioctl-action",
+  "name": "@global-science-technology-inc/install-istioctl-action",
   "version": "0.1.0",
   "description": "Action to install istioctl for use in github actions pipelines",
   "main": "src/run.js",
@@ -8,7 +8,13 @@
     "format": "prettier --write **/*.ts",
     "test": "jest"
   },
-  "repository": "Global-Science-Technology-Inc/install-istioctl-action.git",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": "https://github.com/global-science-technology-inc/install-istioctl-action.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/global-science-technology-inc"
+  },
   "keywords": [
     "GitHub",
     "Actions",

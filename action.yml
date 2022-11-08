@@ -14,7 +14,7 @@ outputs:
 
 runs:
   using: 'node16'
-  main: 'src/main.js'
+  main: 'src/main.ts'
 
 branding:
   color: 'blue'

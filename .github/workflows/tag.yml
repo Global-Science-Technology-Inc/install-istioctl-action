@@ -1,20 +1,18 @@
-name: Release GitHub Action
+name: Tag GitHub Action
 on:
-  release:
-    types: [created]
+  push:
+    tags:
+      - release-**
+      - v**
 
 jobs:
   istioctl:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-    # Setup .npmrc file to publish to GitHub Packages
     - name: Setup node
-      uses: actions/setup-node@v3
+    - uses: actions/setup-node@v3
       with:
         node-version: 16
         registry-url: 'https://npm.pkg.github.com'

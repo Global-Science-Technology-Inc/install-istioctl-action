@@ -11,6 +11,7 @@ repos:
     hooks:
       - id: talisman-commit
         stages: &commit-stage [commit]
+        exclude: ./node_modules/.*
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.5.0
